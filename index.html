@@ -448,11 +448,240 @@ body, p, li, .training-copy, .certificate-copy { font-size: 1.04rem; line-height
 .bme-certificate-gallery img{width:100%;height:220px;object-fit:contain;background:transparent!important;padding:0!important;border:0!important}
 @media(max-width:700px){#certificates .certificate-row{grid-template-columns:1fr}.kcc-photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.bme-certificate-gallery{grid-template-columns:1fr}}
 </style>
+<style id="final-white-black-deep-purple-theme">
+:root {
+  --bg: #FFFFFF !important;
+  --panel: #FFFFFF !important;
+  --panel2: #FFFFFF !important;
+  --panel-2: #FFFFFF !important;
+  --text: #000000 !important;
+  --muted: #000000 !important;
+  --accent: #4B0082 !important;
+  --accent-strong: #4B0082 !important;
+  --accent-soft: #FFFFFF !important;
+  --purple: #4B0082 !important;
+  --purple2: #4B0082 !important;
+  --teal: #4B0082 !important;
+  --teal2: #4B0082 !important;
+  --line: #4B0082 !important;
+  --border: #4B0082 !important;
+}
 
-<style id="project-image-original-background">
-#projects img{background:transparent!important;box-shadow:none!important;padding:0!important;border:0!important}
-#projects .project-image,#projects .project-media,#projects .project-gallery img{background:transparent!important;padding:0!important}
-.research-journey-prompt{margin:1rem 0 1.25rem;padding:.7rem .9rem;border-left:3px solid #b68cff;background:rgba(139,92,246,.09);border-radius:0 .5rem .5rem 0;color:var(--text);line-height:1.65}.research-journey-prompt strong{color:#d8bfff}</style>
+html,
+body {
+  background: #FFFFFF !important;
+  background-image: none !important;
+  color: #000000 !important;
+}
+
+body,
+main,
+header,
+footer,
+section,
+.wrap,
+.hero,
+.hero-grid,
+.about,
+.card,
+.stat,
+.details,
+.details-body,
+.method-card,
+.test-card,
+.project-card,
+.manuscript-entry,
+.reference-entry,
+.award-card,
+.skill-card,
+.certificate-row,
+.training-row,
+.timeline-item,
+.manuscripts-in-preparation {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+  box-shadow: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.section-head,
+.section-head h2,
+.subsection-head h3 {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+p,
+li,
+span,
+strong,
+b,
+label,
+small,
+.meta,
+.muted,
+.about-copy,
+.details-body,
+.training-copy,
+.certificate-copy,
+.project-copy,
+.manuscript-authors,
+.manuscript-status {
+  color: #000000 !important;
+}
+
+a,
+a:visited,
+.brand span,
+.eyebrow,
+.section-kicker,
+.text-link,
+.contact-email,
+.profile-links a,
+.details summary,
+.method-card summary,
+.accordion summary,
+.manuscript-entry h4,
+.reference-entry h3 {
+  color: #4B0082 !important;
+}
+
+a:hover {
+  color: #000000 !important;
+}
+
+header {
+  background: #FFFFFF !important;
+  border-bottom: 1px solid #4B0082 !important;
+  backdrop-filter: none !important;
+}
+
+.navlinks a {
+  color: #000000 !important;
+}
+
+.navlinks a:hover {
+  color: #4B0082 !important;
+}
+
+.card,
+.stat,
+.details,
+.method-card,
+.test-card,
+.project-card,
+.manuscript-entry,
+.reference-entry,
+.award-card,
+.skill-card,
+.certificate-row,
+.training-row,
+.timeline-item,
+.chip,
+input,
+textarea,
+select {
+  border-color: #4B0082 !important;
+}
+
+.btn,
+.btn.primary,
+button {
+  background: #4B0082 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #4B0082 !important;
+}
+
+.btn:hover,
+.btn.primary:hover,
+button:hover {
+  background: #000000 !important;
+  color: #FFFFFF !important;
+  border-color: #000000 !important;
+}
+
+input,
+textarea,
+select {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #000000 !important;
+  opacity: 0.7;
+}
+
+details,
+details summary,
+details .details-body,
+.accordion,
+.pipeline-details {
+  background: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+details summary {
+  font-weight: 700 !important;
+}
+
+hr,
+section,
+.card,
+.stat,
+.reference-entry,
+.manuscript-entry,
+.certificate-row {
+  border-color: #4B0082 !important;
+}
+
+.profile,
+.profile-frame,
+.profile-visual,
+.hero-photo,
+.profile-rect-image {
+  border-color: #4B0082 !important;
+  box-shadow: none !important;
+}
+
+.gallery img,
+.lab-gallery img,
+.test-visual img,
+.pipeline-view img,
+.certificate-row img,
+.leadership-logo-image,
+#projects img {
+  box-shadow: none !important;
+}
+
+::selection {
+  background: #4B0082;
+  color: #FFFFFF;
+}
+
+* {
+  text-shadow: none !important;
+}
+
+@media (max-width: 760px) {
+  html,
+  body,
+  header,
+  section,
+  .card,
+  .details,
+  .details-body {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+  }
+}
+</style>
 </head>
 <body>
 <header><nav class="wrap"><a class="brand" href="#home">Shaira Afra <span>Redhila</span></a><div class="navlinks"><a href="#about">About</a><a href="#education">Education</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#training">Training</a><a href="#certificates">Certificates</a><a href="#awards">Awards</a><a href="#technical-skills">Technical Skills</a><a href="#leadership">Leadership</a></div><a href="#references">References</a></nav></header>
