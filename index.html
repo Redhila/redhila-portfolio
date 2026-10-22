@@ -448,41 +448,9 @@ body, p, li, .training-copy, .certificate-copy { font-size: 1.04rem; line-height
 .bme-certificate-gallery img{width:100%;height:220px;object-fit:contain;background:transparent!important;padding:0!important;border:0!important}
 @media(max-width:700px){#certificates .certificate-row{grid-template-columns:1fr}.kcc-photo-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.bme-certificate-gallery{grid-template-columns:1fr}}
 </style>
-<style id="final-white-black-deep-purple-theme">
-:root {
-  --bg: #FFFFFF !important;
-  --panel: #FFFFFF !important;
-  --panel2: #FFFFFF !important;
-  --panel-2: #FFFFFF !important;
-  --text: #000000 !important;
-  --muted: #000000 !important;
-  --accent: #4B0082 !important;
-  --accent-strong: #4B0082 !important;
-  --accent-soft: #FFFFFF !important;
-  --purple: #4B0082 !important;
-  --purple2: #4B0082 !important;
-  --teal: #4B0082 !important;
-  --teal2: #4B0082 !important;
-  --line: #4B0082 !important;
-  --border: #4B0082 !important;
-}
 
-html,
-body {
-  background: #FFFFFF !important;
-  background-image: none !important;
-  color: #000000 !important;
-}
-
-body,
-main,
-header,
-footer,
-section,
-.wrap,
-.hero,
-.hero-grid,
-.about,
+<style id="final-readability-and-image-frames">
+/* 1. Force all content cards to use a white background */
 .card,
 .stat,
 .details,
@@ -490,6 +458,7 @@ section,
 .method-card,
 .test-card,
 .project-card,
+.manuscripts-in-preparation,
 .manuscript-entry,
 .reference-entry,
 .award-card,
@@ -497,132 +466,109 @@ section,
 .certificate-row,
 .training-row,
 .timeline-item,
-.manuscripts-in-preparation {
-  background-color: #FFFFFF !important;
+.pipeline-view,
+.pipeline-details,
+.publication-card,
+.education-subentry {
+  background: #FFFFFF !important;
   color: #000000 !important;
+  border-color: #4B0082 !important;
   box-shadow: none !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.section-head,
-.section-head h2,
-.subsection-head h3 {
+/* 2. Make text readable inside cards */
+.card *,
+.stat *,
+.details *,
+.method-card *,
+.test-card *,
+.project-card *,
+.manuscripts-in-preparation *,
+.manuscript-entry *,
+.reference-entry *,
+.award-card *,
+.skill-card *,
+.certificate-row *,
+.training-row *,
+.timeline-item *,
+.publication-card * {
+  color: #000000 !important;
+}
+
+/* 3. Keep links deep purple */
+.card a,
+.details a,
+.manuscript-entry a,
+.reference-entry a,
+.publication-card a,
+.certificate-row a,
+.semester-links a {
+  color: #4B0082 !important;
+}
+
+/* 4. Purple outlines for cards */
+.card,
+.manuscript-entry,
+.reference-entry,
+.manuscripts-in-preparation {
+  border: 1px solid #4B0082 !important;
+  border-radius: 12px !important;
+}
+
+/* 5. Add a consistent black frame to logos and certificates */
+.institution-logo,
+.certificate-row img,
+.certificate-feature-row img,
+.leadership-logo-wrap img,
+.leadership-entry img,
+.training-media img,
+.gallery img,
+.lab-gallery img,
+.test-visual img,
+.project-gallery img,
+.event-gallery img,
+.photo-gallery img,
+.image-gallery img,
+.kcc-photo-gallery img,
+.bme-certificate-gallery img {
+  background: #FFFFFF !important;
+  border: 2px solid #000000 !important;
+  padding: 5px !important;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+  border-radius: 4px !important;
+}
+
+/* 6. Frame the profile photo without changing its crop */
+img.profile,
+img.profile-rect-image {
+  border: 2px solid #000000 !important;
+  padding: 5px !important;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+}
+
+/* 7. Keep headings black and bold */
+h1, h2, h3, h4, h5, h6 {
   color: #000000 !important;
   font-weight: 700 !important;
 }
 
-p,
-li,
-span,
-strong,
-b,
-label,
-small,
-.meta,
-.muted,
-.about-copy,
-.details-body,
-.training-copy,
-.certificate-copy,
-.project-copy,
-.manuscript-authors,
-.manuscript-status {
-  color: #000000 !important;
-}
-
-a,
-a:visited,
-.brand span,
-.eyebrow,
-.section-kicker,
-.text-link,
-.contact-email,
-.profile-links a,
-.details summary,
-.method-card summary,
-.accordion summary,
-.manuscript-entry h4,
-.reference-entry h3 {
-  color: #4B0082 !important;
-}
-
-a:hover {
-  color: #000000 !important;
-}
-
-header {
-  background: #FFFFFF !important;
-  border-bottom: 1px solid #4B0082 !important;
-  backdrop-filter: none !important;
-}
-
-.navlinks a {
-  color: #000000 !important;
-}
-
-.navlinks a:hover {
-  color: #4B0082 !important;
-}
-
-.card,
-.stat,
-.details,
-.method-card,
-.test-card,
-.project-card,
-.manuscript-entry,
-.reference-entry,
-.award-card,
-.skill-card,
-.certificate-row,
-.training-row,
-.timeline-item,
-.chip,
-input,
-textarea,
-select {
-  border-color: #4B0082 !important;
-}
-
-.btn,
-.btn.primary,
-button {
-  background: #4B0082 !important;
-  color: #FFFFFF !important;
-  border: 1px solid #4B0082 !important;
-}
-
-.btn:hover,
-.btn.primary:hover,
-button:hover {
-  background: #000000 !important;
-  color: #FFFFFF !important;
-  border-color: #000000 !important;
-}
-
-input,
-textarea,
-select {
+/* 8. Fix dark section backgrounds */
+#education .grid > .card,
+#publications .card,
+#publications .manuscript-entry,
+#publications .manuscripts-in-preparation,
+#certificates .certificate-row,
+#leadership .leadership-entry {
   background: #FFFFFF !important;
   color: #000000 !important;
 }
 
-input::placeholder,
-textarea::placeholder {
-  color: #000000 !important;
-  opacity: 0.7;
-}
-
+/* 9. Ensure text remains visible in expandable sections */
 details,
 details summary,
-details .details-body,
-.accordion,
-.pipeline-details {
+details .details-body {
   background: #FFFFFF !important;
   color: #000000 !important;
 }
@@ -631,57 +577,19 @@ details summary {
   font-weight: 700 !important;
 }
 
-hr,
-section,
-.card,
-.stat,
-.reference-entry,
-.manuscript-entry,
-.certificate-row {
-  border-color: #4B0082 !important;
-}
-
-.profile,
-.profile-frame,
-.profile-visual,
-.hero-photo,
-.profile-rect-image {
-  border-color: #4B0082 !important;
-  box-shadow: none !important;
-}
-
-.gallery img,
-.lab-gallery img,
-.test-visual img,
-.pipeline-view img,
-.certificate-row img,
-.leadership-logo-image,
-#projects img {
-  box-shadow: none !important;
+/* 10. Keep the three-color theme */
+html,
+body {
+  background: #FFFFFF !important;
+  color: #000000 !important;
 }
 
 ::selection {
   background: #4B0082;
   color: #FFFFFF;
 }
-
-* {
-  text-shadow: none !important;
-}
-
-@media (max-width: 760px) {
-  html,
-  body,
-  header,
-  section,
-  .card,
-  .details,
-  .details-body {
-    background-color: #FFFFFF !important;
-    color: #000000 !important;
-  }
-}
 </style>
+
 </head>
 <body>
 <header><nav class="wrap"><a class="brand" href="#home">Shaira Afra <span>Redhila</span></a><div class="navlinks"><a href="#about">About</a><a href="#education">Education</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#training">Training</a><a href="#certificates">Certificates</a><a href="#awards">Awards</a><a href="#technical-skills">Technical Skills</a><a href="#leadership">Leadership</a></div><a href="#references">References</a></nav></header>
